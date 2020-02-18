@@ -1,0 +1,22 @@
+--cpu Cortex-M0+ --lto
+"ws2812_g070_test2\startup_stm32g070xx.o"
+"ws2812_g070_test2\bsp_ws2812.o"
+"ws2812_g070_test2\main.o"
+"ws2812_g070_test2\gpio.o"
+"ws2812_g070_test2\dma.o"
+"ws2812_g070_test2\tim.o"
+"ws2812_g070_test2\usart.o"
+"ws2812_g070_test2\stm32g0xx_it.o"
+"ws2812_g070_test2\stm32g0xx_ll_gpio.o"
+"ws2812_g070_test2\stm32g0xx_ll_exti.o"
+"ws2812_g070_test2\stm32g0xx_ll_dma.o"
+"ws2812_g070_test2\stm32g0xx_ll_pwr.o"
+"ws2812_g070_test2\stm32g0xx_ll_tim.o"
+"ws2812_g070_test2\stm32g0xx_ll_rcc.o"
+"ws2812_g070_test2\stm32g0xx_ll_utils.o"
+"ws2812_g070_test2\stm32g0xx_ll_usart.o"
+"ws2812_g070_test2\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "WS2812_G070_TEST2\WS2812_G070_TEST2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WS2812_G070_TEST2.map" -o WS2812_G070_TEST2\WS2812_G070_TEST2.axf
